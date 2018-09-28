@@ -59,10 +59,15 @@ component MUX
            sel_i : in STD_LOGIC_VECTOR(3 downto 0);
            data_o : out STD_LOGIC_VECTOR(7 downto 0));
 end component;
+component clk_wiz_0
+    Port (  clk_in1 : in STD_LOGIC;
+            clk_out1 : out STD_LOGIC);
+end component;
 
 signal data_i_s : STD_LOGIC_VECTOR(127 downto 0);
 signal data_o_s : STD_LOGIC_VECTOR(127 downto 0);
 signal key_s : bit128;
+signal clk_s : STD_LOGIC;
 
 
 begin
@@ -73,7 +78,7 @@ begin
     --port mapping
     U0 : AES
 	port map( key_i => key_s,
-	   clock_i => clock_i,
+	   clock_i => clk_s,
 	   reset_i => reset_i,
 	   start_i => start_i,
 	   data_i => data_i_s,
@@ -84,5 +89,9 @@ begin
 	port map( data_i => data_o_s,
               sel_i => sel_i,
               data_o => data_o);
+
+    U2 : clk_wiz_0
+	port map( clk_in1 => clock_i,
+              clk_out1 => clk_s);
 
 end FPGA_RL_arch;
