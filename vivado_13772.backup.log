@@ -1,0 +1,184 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Oct  1 13:21:10 2018
+# Process ID: 13772
+# Current directory: D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8012 D:\Documents\Cours\EMSE\3A\Embedded_Systems\FPGA_CoDesign\Tuto_lab1_embedded\Tuto_lab1_embedded.xpr
+# Log file: D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/vivado.log
+# Journal file: D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.xpr
+INFO: [Project 1-313] Project file moved from 'D:/Documents/Cours/EMSE/3A/Embedded Systems/FPGA_CoDesign/Tuto_lab1_embedded' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Softwares/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 763.855 ; gain = 100.059
+update_compile_order -fileset sources_1
+open_bd_design {D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.srcs/sources_1/bd/system/system.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - switches
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - buttons
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <system> from BD file <D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.srcs/sources_1/bd/system/system.bd>
+open_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 877.031 ; gain = 75.512
+validate_bd_design -force
+WARNING: [BD 41-1771] Block interface /buttons/GPIO has associated board param 'GPIO_BOARD_INTERFACE', which is set to board part interface 'btns_5bits'. This interface is connected to an external interface /buttons, whose name 'buttons' does not match with the board interface name 'btns_5bits'.
+This is a visual-only issue - this interface /buttons/GPIO will be connected to board interface 'btns_5bits'. If desired, please change the name of this port /buttons manually.
+reset_run system_processing_system7_0_0_synth_1
+save_bd_design
+Wrote  : <D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.srcs/sources_1/bd/system/system.bd> 
+launch_runs synth_1 -jobs 4
+INFO: [BD 41-1662] The design 'system.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-1771] Block interface /buttons/GPIO has associated board param 'GPIO_BOARD_INTERFACE', which is set to board part interface 'btns_5bits'. This interface is connected to an external interface /buttons, whose name 'buttons' does not match with the board interface name 'btns_5bits'.
+This is a visual-only issue - this interface /buttons/GPIO will be connected to board interface 'btns_5bits'. If desired, please change the name of this port /buttons manually.
+VHDL Output written to : D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.srcs/sources_1/bd/system/synth/system.vhd
+VHDL Output written to : D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.srcs/sources_1/bd/system/sim/system.vhd
+VHDL Output written to : D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.srcs/sources_1/bd/system/hdl/system_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block switches .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block buttons .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.srcs/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.srcs/sources_1/bd/system/synth/system.hwdef
+[Mon Oct  1 13:34:28 2018] Launched system_processing_system7_0_0_synth_1, system_rst_ps7_0_100M_0_synth_1, system_auto_pc_0_synth_1, system_xbar_0_synth_1, system_axi_gpio_0_0_synth_1, system_axi_gpio_0_1_synth_1...
+Run output will be captured here:
+system_processing_system7_0_0_synth_1: D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.runs/system_processing_system7_0_0_synth_1/runme.log
+system_rst_ps7_0_100M_0_synth_1: D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.runs/system_rst_ps7_0_100M_0_synth_1/runme.log
+system_auto_pc_0_synth_1: D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.runs/system_auto_pc_0_synth_1/runme.log
+system_xbar_0_synth_1: D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.runs/system_xbar_0_synth_1/runme.log
+system_axi_gpio_0_0_synth_1: D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.runs/system_axi_gpio_0_0_synth_1/runme.log
+system_axi_gpio_0_1_synth_1: D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.runs/system_axi_gpio_0_1_synth_1/runme.log
+[Mon Oct  1 13:34:29 2018] Launched synth_1...
+Run output will be captured here: D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 1082.887 ; gain = 167.082
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg484-1
+INFO: [Project 1-454] Reading design checkpoint 'd:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.srcs/sources_1/bd/system/ip/system_axi_gpio_0_1/system_axi_gpio_0_1.dcp' for cell 'system_i/buttons'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.dcp' for cell 'system_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.srcs/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0.dcp' for cell 'system_i/rst_ps7_0_100M'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.dcp' for cell 'system_i/switches'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.srcs/sources_1/bd/system/ip/system_xbar_0/system_xbar_0.dcp' for cell 'system_i/ps7_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0.dcp' for cell 'system_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+INFO: [Netlist 29-17] Analyzing 31 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_i/processing_system7_0/inst'
+Finished Parsing XDC File [d:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_i/processing_system7_0/inst'
+Parsing XDC File [d:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_board.xdc] for cell 'system_i/switches/U0'
+Finished Parsing XDC File [d:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_board.xdc] for cell 'system_i/switches/U0'
+Parsing XDC File [d:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xdc] for cell 'system_i/switches/U0'
+Finished Parsing XDC File [d:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xdc] for cell 'system_i/switches/U0'
+Parsing XDC File [d:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.srcs/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0_board.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [d:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.srcs/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0_board.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Parsing XDC File [d:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.srcs/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [d:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.srcs/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Parsing XDC File [d:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.srcs/sources_1/bd/system/ip/system_axi_gpio_0_1/system_axi_gpio_0_1_board.xdc] for cell 'system_i/buttons/U0'
+Finished Parsing XDC File [d:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.srcs/sources_1/bd/system/ip/system_axi_gpio_0_1/system_axi_gpio_0_1_board.xdc] for cell 'system_i/buttons/U0'
+Parsing XDC File [d:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.srcs/sources_1/bd/system/ip/system_axi_gpio_0_1/system_axi_gpio_0_1.xdc] for cell 'system_i/buttons/U0'
+Finished Parsing XDC File [d:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.srcs/sources_1/bd/system/ip/system_axi_gpio_0_1/system_axi_gpio_0_1.xdc] for cell 'system_i/buttons/U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1525.883 ; gain = 405.773
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+Writing placer database...
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.192 . Memory (MB): peak = 1981.285 ; gain = 13.141
+[Mon Oct  1 13:42:36 2018] Launched impl_1...
+Run output will be captured here: D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.runs/impl_1/runme.log
+file copy -force D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.runs/impl_1/system_wrapper.sysdef D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.sdk/system_wrapper.hdf
+
+launch_sdk -workspace D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.sdk -hwspec D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.sdk -hwspec D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+launch_sdk -workspace D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.sdk -hwspec D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.sdk -hwspec D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+launch_sdk -workspace D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.sdk -hwspec D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.sdk -hwspec D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+launch_sdk -workspace D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.sdk -hwspec D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.sdk -hwspec D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab1_embedded/Tuto_lab1_embedded.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+close_project
+close_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1985.383 ; gain = 0.000
+create_project managed_ip_project D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab3_embedded/managed_ip_project -part xc7k70tfbv676-1 -ip
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab3_embedded/managed_ip_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Softwares/Xilinx/Vivado/2018.2/data/ip'.
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1985.383 ; gain = 0.000
+set_property target_simulator XSim [current_project]
+create_peripheral xilinx.com user led_ip 1.0 -dir D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab3_embedded/managed_ip_project/../ip_repo
+add_peripheral_interface S_AXI -interface_mode slave -axi_type lite [ipx::find_open_core xilinx.com:user:led_ip:1.0]
+generate_peripheral -driver -bfm_example_design -debug_hw_example_design [ipx::find_open_core xilinx.com:user:led_ip:1.0]
+write_peripheral [ipx::find_open_core xilinx.com:user:led_ip:1.0]
+set_property  ip_repo_paths  D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab3_embedded/managed_ip_project/../ip_repo/led_ip_1.0 [current_project]
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab3_embedded/ip_repo/led_ip_1.0'.
+ipx::edit_ip_in_project -upgrade true -name edit_led_ip_v1_0 -directory D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab3_embedded/managed_ip_project/../ip_repo d:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab3_embedded/ip_repo/led_ip_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'd:/documents/cours/emse/3a/embedded_systems/fpga_codesign/tuto_lab3_embedded/ip_repo'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Softwares/Xilinx/Vivado/2018.2/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab3_embedded/ip_repo/led_ip_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1985.383 ; gain = 0.000
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -norecurse -copy_to d:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab3_embedded/ip_repo/led_ip_1.0/src {{D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tutos Embedded/2015_2_zynq_sources/2015_2_zynq_sources/lab3/lab3_user_logic.v}}
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+[Mon Oct  1 15:16:31 2018] Launched synth_1...
+Run output will be captured here: d:/documents/cours/emse/3a/embedded_systems/fpga_codesign/tuto_lab3_embedded/ip_repo/edit_led_ip_v1_0.runs/synth_1/runme.log
+set_property taxonomy /Basic_Elements [ipx::current_core]
+set_property supported_families {kintex7 Pre-Production zynq Beta} [ipx::current_core]
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'd:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab3_embedded/ip_repo/led_ip_1.0/component.xml' ignored by IP packager.
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'd:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab3_embedded/ip_repo/led_ip_1.0/component.xml' ignored by IP packager.
+INFO: [IP_Flow 19-3166] Bus Interface 'S_AXI': References existing memory map 'S_AXI'.
+ipx::remove_all_hdl_parameter -remove_inferred_params [ipx::current_core]
+ipx::add_model_parameters_from_hdl [ipx::current_core] -top_level_hdl_file d:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab3_embedded/ip_repo/led_ip_1.0/hdl/led_ip_v1_0.v -top_module_name led_ip_v1_0
+ipx::infer_user_parameters [ipx::current_core]
+ipgui::add_param -name {LED_WIDTH} -component [ipx::current_core]
+ipgui::add_param -name {C_S_AXI_DATA_WIDTH} -component [ipx::current_core]
+ipgui::add_param -name {C_S_AXI_ADDR_WIDTH} -component [ipx::current_core]
+set_property core_revision 2 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path d:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab3_embedded/ip_repo/led_ip_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'd:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Tuto_lab3_embedded/ip_repo/led_ip_1.0'
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Oct  1 15:20:46 2018...
