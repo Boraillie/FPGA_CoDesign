@@ -24,3 +24,9 @@ Tuto_lab1_embedded\.xpr
 vivado_pid9376\.str
 
 Tuto_lab1_embedded\.sdk/
+
+*.jou
+
+vivado_9376\.backup\.log
+
+vivado_pid13772\.str
