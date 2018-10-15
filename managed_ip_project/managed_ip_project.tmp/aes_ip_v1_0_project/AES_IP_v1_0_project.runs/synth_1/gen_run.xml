@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1539611428">
+  <File Type="PA-TCL" Name="AES_IP_v1_0.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="AES_IP_v1_0_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="AES_IP_v1_0_reports.tcl"/>
+  <File Type="RDS-RDS" Name="AES_IP_v1_0.vds"/>
+  <File Type="RDS-UTIL" Name="AES_IP_v1_0_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="AES_IP_v1_0_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="AES_IP_v1_0.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="AES_IP_v1_0_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="AES_IP_v1_0_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../../../../../../../../../../Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/hdl/AES_IP_v1_0_S_AES_AXI.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../../../../Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/hdl/AES_IP_v1_0.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../../../../Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/component.xml">
+      <FileInfo SFType="IPXACT"/>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="AES_IP_v1_0"/>
+      <Option Name="TopRTLFile" Val="$PPRDIR/../../../../../../../../../../Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/hdl/AES_IP_v1_0.vhd"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

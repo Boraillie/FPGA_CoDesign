@@ -1,0 +1,289 @@
+
+*** Running vivado
+    with args -log AES_IP_v1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source AES_IP_v1_0.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source AES_IP_v1_0.tcl -notrace
+Command: synth_design -top AES_IP_v1_0 -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9880 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 357.258 ; gain = 99.078
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'AES_IP_v1_0' [d:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/hdl/AES_IP_v1_0.vhd:49]
+	Parameter C_S_AES_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AES_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+WARNING: [Synth 8-5640] Port 'aes_on' is missing in component declaration [d:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/hdl/AES_IP_v1_0.vhd:52]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'AES_IP_v1_0_S_AES_AXI' declared at 'd:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/hdl/AES_IP_v1_0_S_AES_AXI.vhd:5' bound to instance 'AES_IP_v1_0_S_AES_AXI_inst' of component 'AES_IP_v1_0_S_AES_AXI' [d:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/hdl/AES_IP_v1_0.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'AES_IP_v1_0_S_AES_AXI' [d:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/hdl/AES_IP_v1_0_S_AES_AXI.vhd:86]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [d:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/hdl/AES_IP_v1_0_S_AES_AXI.vhd:241]
+WARNING: [Synth 8-3848] Net aes_on in module/entity AES_IP_v1_0_S_AES_AXI does not have driver. [d:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/hdl/AES_IP_v1_0_S_AES_AXI.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'AES_IP_v1_0_S_AES_AXI' (1#1) [d:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/hdl/AES_IP_v1_0_S_AES_AXI.vhd:86]
+WARNING: [Synth 8-3848] Net aes_on in module/entity AES_IP_v1_0 does not have driver. [d:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/hdl/AES_IP_v1_0.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'AES_IP_v1_0' (2#1) [d:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/hdl/AES_IP_v1_0.vhd:49]
+WARNING: [Synth 8-3331] design AES_IP_v1_0_S_AES_AXI has unconnected port aes_on
+WARNING: [Synth 8-3331] design AES_IP_v1_0_S_AES_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design AES_IP_v1_0_S_AES_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design AES_IP_v1_0_S_AES_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design AES_IP_v1_0_S_AES_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design AES_IP_v1_0_S_AES_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design AES_IP_v1_0_S_AES_AXI has unconnected port S_AXI_ARPROT[0]
+WARNING: [Synth 8-3331] design AES_IP_v1_0 has unconnected port aes_on
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 412.305 ; gain = 154.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 412.305 ; gain = 154.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 412.305 ; gain = 154.125
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 412.305 ; gain = 154.125
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 15    
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 14    
+	  15 Input     32 Bit        Muxes := 14    
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module AES_IP_v1_0_S_AES_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 15    
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 14    
+	  15 Input     32 Bit        Muxes := 14    
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design AES_IP_v1_0_S_AES_AXI has unconnected port aes_on
+WARNING: [Synth 8-3331] design AES_IP_v1_0_S_AES_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design AES_IP_v1_0_S_AES_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design AES_IP_v1_0_S_AES_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design AES_IP_v1_0_S_AES_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design AES_IP_v1_0_S_AES_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design AES_IP_v1_0_S_AES_AXI has unconnected port S_AXI_ARPROT[0]
+WARNING: [Synth 8-3331] design AES_IP_v1_0 has unconnected port aes_on
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\AES_IP_v1_0_S_AES_AXI_inst/aw_en_reg )
+INFO: [Synth 8-3886] merging instance 'AES_IP_v1_0_S_AES_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'AES_IP_v1_0_S_AES_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\AES_IP_v1_0_S_AES_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'AES_IP_v1_0_S_AES_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'AES_IP_v1_0_S_AES_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\AES_IP_v1_0_S_AES_AXI_inst/axi_bresp_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (AES_IP_v1_0_S_AES_AXI_inst/aw_en_reg) is unused and will be removed from module AES_IP_v1_0.
+WARNING: [Synth 8-3332] Sequential element (AES_IP_v1_0_S_AES_AXI_inst/axi_bresp_reg[1]) is unused and will be removed from module AES_IP_v1_0.
+WARNING: [Synth 8-3332] Sequential element (AES_IP_v1_0_S_AES_AXI_inst/axi_awaddr_reg[1]) is unused and will be removed from module AES_IP_v1_0.
+WARNING: [Synth 8-3332] Sequential element (AES_IP_v1_0_S_AES_AXI_inst/axi_awaddr_reg[0]) is unused and will be removed from module AES_IP_v1_0.
+WARNING: [Synth 8-3332] Sequential element (AES_IP_v1_0_S_AES_AXI_inst/axi_araddr_reg[1]) is unused and will be removed from module AES_IP_v1_0.
+WARNING: [Synth 8-3332] Sequential element (AES_IP_v1_0_S_AES_AXI_inst/axi_araddr_reg[0]) is unused and will be removed from module AES_IP_v1_0.
+WARNING: [Synth 8-3332] Sequential element (AES_IP_v1_0_S_AES_AXI_inst/axi_rresp_reg[1]) is unused and will be removed from module AES_IP_v1_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 594.453 ; gain = 336.273
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 594.453 ; gain = 336.273
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 594.453 ; gain = 336.273
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 594.453 ; gain = 336.273
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 594.453 ; gain = 336.273
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 594.453 ; gain = 336.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 594.453 ; gain = 336.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 594.453 ; gain = 336.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 594.453 ; gain = 336.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     1|
+|2     |LUT1  |     1|
+|3     |LUT2  |     1|
+|4     |LUT3  |     3|
+|5     |LUT4  |    34|
+|6     |LUT6  |   153|
+|7     |MUXF7 |    64|
+|8     |MUXF8 |    32|
+|9     |FDRE  |   489|
+|10    |FDSE  |     4|
+|11    |IBUF  |    51|
+|12    |OBUF  |    41|
+|13    |OBUFT |     1|
++------+------+------+
+
+Report Instance Areas: 
++------+-----------------------------+----------------------+------+
+|      |Instance                     |Module                |Cells |
++------+-----------------------------+----------------------+------+
+|1     |top                          |                      |   875|
+|2     |  AES_IP_v1_0_S_AES_AXI_inst |AES_IP_v1_0_S_AES_AXI |   781|
++------+-----------------------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 594.453 ; gain = 336.273
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 27 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 594.453 ; gain = 336.273
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 594.453 ; gain = 336.273
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 147 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+19 Infos, 27 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 685.652 ; gain = 440.613
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'd:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/managed_ip_project/managed_ip_project.tmp/aes_ip_v1_0_project/AES_IP_v1_0_project.runs/synth_1/AES_IP_v1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file AES_IP_v1_0_utilization_synth.rpt -pb AES_IP_v1_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 685.652 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 15 15:51:00 2018...

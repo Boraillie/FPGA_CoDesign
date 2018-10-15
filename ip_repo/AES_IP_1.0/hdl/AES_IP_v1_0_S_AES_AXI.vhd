@@ -84,7 +84,22 @@ entity AES_IP_v1_0_S_AES_AXI is
 end AES_IP_v1_0_S_AES_AXI;
 
 architecture arch_imp of AES_IP_v1_0_S_AES_AXI is
-
+    component AES
+        Port ( clock_i : in std_logic;
+                reset_i : in std_logic;
+                start_i : in std_logic;
+                key_i : in  std_logic_vector(127 downto 0);
+                data_i : in std_logic_vector(127 downto 0);
+                data_o : out std_logic_vector(127 downto 0);
+                aes_on_o : out std_logic);
+    end component;
+    
+    signal data_i_s : STD_LOGIC_VECTOR(127 downto 0);
+    signal data_o_s : STD_LOGIC_VECTOR(127 downto 0);
+    signal key_s : STD_LOGIC_VECTOR(127 downto 0);
+    signal reset_s : std_logic;
+    signal start_s : std_logic;
+    
 	-- AXI4LITE signals
 	signal axi_awaddr	: std_logic_vector(C_S_AXI_ADDR_WIDTH-1 downto 0);
 	signal axi_awready	: std_logic;
@@ -512,9 +527,27 @@ begin
 	  end if;
 	end process;
 
+    
 
 	-- Add user logic here
-
+    data_i_s <= slv_reg3 & slv_reg2 & slv_reg1 & slv_reg0;
+    key_s <= slv_reg7 & slv_reg6 & slv_reg5 & slv_reg4;
+    reset_s <= slv_reg8(0);
+    start_s <= slv_reg9(0);
+    
+    slv_reg10 <= data_o_s (31 downto 0);
+    slv_reg11 <= data_o_s (63 downto 32);
+    slv_reg12 <= data_o_s (95 downto 64);
+    slv_reg13 <= data_o_s (127 downto 96);
+    
+     U0 : AES
+       port map( key_i => key_s,
+          clock_i => S_AXI_ACLK,
+          reset_i => reset_s,
+          start_i => start_s,
+          data_i => data_i_s,
+          data_o => data_o_s,
+          aes_on_o => aes_on);
 	-- User logic ends
 
 end arch_imp;
