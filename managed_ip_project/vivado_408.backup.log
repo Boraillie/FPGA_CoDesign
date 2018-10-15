@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Oct 15 14:34:25 2018
+# Process ID: 408
+# Current directory: D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/managed_ip_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent420 D:\Documents\Cours\EMSE\3A\Embedded_Systems\FPGA_CoDesign\Projet_AES_2018\managed_ip_project\managed_ip_project.xpr
+# Log file: D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/managed_ip_project/vivado.log
+# Journal file: D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/managed_ip_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/managed_ip_project/managed_ip_project.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/managed_ip_project'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Softwares/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 777.070 ; gain = 79.531
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 15 14:42:03 2018...
