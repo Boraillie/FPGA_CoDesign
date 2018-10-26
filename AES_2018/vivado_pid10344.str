@@ -298,3 +298,6 @@ dismissDialog("Launch SDK"); // aa (ck)
 // Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/AES_2018/AES_2018.sdk -hwspec D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/AES_2018/AES_2018.sdk/system_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
 // HMemoryUtils.trashcanNow. Engine heap size: 655 MB. GUI used memory: 52 MB. Current time: 10/26/18 2:59:29 PM CEST
 // HMemoryUtils.trashcanNow. Engine heap size: 655 MB. GUI used memory: 50 MB. Current time: 10/26/18 3:29:30 PM CEST
+// [GUI Memory]: 107 MB (+118kb) [02:31:31]
+// HMemoryUtils.trashcanNow. Engine heap size: 655 MB. GUI used memory: 50 MB. Current time: 10/26/18 3:59:30 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 655 MB. GUI used memory: 50 MB. Current time: 10/26/18 4:29:29 PM CEST
