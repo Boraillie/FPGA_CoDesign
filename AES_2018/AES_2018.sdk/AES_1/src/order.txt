@@ -1,0 +1,10 @@
+reset AES
+
+clé
+
+plain text
+
+start
+
+quand AES ON
+read 128bits de la sortie

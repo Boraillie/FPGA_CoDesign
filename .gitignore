@@ -23,10 +23,24 @@ AES_2018/AES_2018\.xpr
 
 AES_2018/vivado_pid9376\.str
 
-AES_2018/AES_2018\.sdk/
 
 *.jou
 
 AES_2018/vivado_9376\.backup\.log
 
 AES_2018/vivado_pid13772\.str
+
+/AES_2018/AES_2018.sdk/.metadata
+/AES_2018/AES_2018.sdk/AES
+/AES_2018/AES_2018.sdk/AES_bsp
+/AES_2018/AES_2018.sdk/mem_test
+/AES_2018/AES_2018.sdk/mem_test_bsp
+/AES_2018/AES_2018.sdk/RemoteSystemsTempFiles
+/AES_2018/AES_2018.sdk/standalone_bsp_0
+/AES_2018/AES_2018.sdk/system_wrapper_hw_platform_0
+/AES_2018/AES_2018.sdk/system_wrapper_hw_platform_1
+/AES_2018/AES_2018.sdk/system_wrapper_hw_platform_2
+/AES_2018/AES_2018.sdk/TestApp
+/AES_2018/AES_2018.sdk/webtalk
+/AES_2018/AES_2018.sdk/ZC702_hw_platform
+/AES_2018/AES_2018.sdk/SDK.log
