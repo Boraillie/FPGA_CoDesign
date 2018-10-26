@@ -1,0 +1,65 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Oct 26 13:29:45 2018
+# Process ID: 2472
+# Current directory: D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2900 D:\Documents\Cours\EMSE\3A\Embedded_Systems\FPGA_CoDesign\Projet_AES_2018\ip_repo\edit_AES_IP_v1_0.xpr
+# Log file: D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/vivado.log
+# Journal file: D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Softwares/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 721.551 ; gain = 55.141
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Oct 26 13:35:19 2018] Launched synth_1...
+Run output will be captured here: D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.runs/synth_1/runme.log
+[Fri Oct 26 13:35:19 2018] Launched impl_1...
+Run output will be captured here: D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Oct 26 13:47:58 2018] Launched synth_1...
+Run output will be captured here: D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.runs/synth_1/runme.log
+[Fri Oct 26 13:47:59 2018] Launched impl_1...
+Run output will be captured here: D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Oct 26 13:54:26 2018] Launched synth_1...
+Run output will be captured here: D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.runs/synth_1/runme.log
+[Fri Oct 26 13:54:26 2018] Launched impl_1...
+Run output will be captured here: D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.runs/impl_1/runme.log
+import_files {D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/src/KeyExpansion_I_O_table.vhd D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/src/FSM_AES.vhd D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/src/SubBytes.vhd D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/src/MixColumns.vhd D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/src/ShiftRows.vhd D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/src/AES.vhd D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/src/KeyExpansion_FSM.vhd D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/src/Counter.vhd D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/src/AddRoundKey.vhd D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/src/matrixMultiplier.vhd D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/src/KeyExpansion_I_O.vhd D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/src/KeyExpansion.vhd D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/src/AESRound.vhd D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/src/CryptPack.vhd D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/src/SBOX_I_O_peralta.vhd}
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Oct 26 13:57:40 2018] Launched synth_1...
+Run output will be captured here: D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.runs/synth_1/runme.log
+[Fri Oct 26 13:57:40 2018] Launched impl_1...
+Run output will be captured here: D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.runs/synth_1
+
+launch_runs impl_1 -jobs 4
+[Fri Oct 26 14:06:18 2018] Launched synth_1...
+Run output will be captured here: D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.runs/synth_1/runme.log
+[Fri Oct 26 14:06:18 2018] Launched impl_1...
+Run output will be captured here: D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Oct 26 14:09:14 2018] Launched impl_1...
+Run output will be captured here: D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.runs/impl_1/runme.log

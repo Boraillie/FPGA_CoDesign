@@ -1,0 +1,521 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Oct 26 14:06:28 2018
+# Process ID: 13948
+# Current directory: D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.runs/synth_1
+# Command line: vivado.exe -log AES_IP_v1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source AES_IP_v1_0.tcl
+# Log file: D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.runs/synth_1/AES_IP_v1_0.vds
+# Journal file: D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source AES_IP_v1_0.tcl -notrace
+Command: synth_design -top AES_IP_v1_0 -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7220 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 357.078 ; gain = 99.188
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'AES_IP_v1_0' [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/hdl/AES_IP_v1_0.vhd:49]
+	Parameter C_S_AES_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AES_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'AES_IP_v1_0_S_AES_AXI' declared at 'D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/hdl/AES_IP_v1_0_S_AES_AXI.vhd:5' bound to instance 'AES_IP_v1_0_S_AES_AXI_inst' of component 'AES_IP_v1_0_S_AES_AXI' [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/hdl/AES_IP_v1_0.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'AES_IP_v1_0_S_AES_AXI' [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/hdl/AES_IP_v1_0_S_AES_AXI.vhd:86]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+WARNING: [Synth 8-614] signal 'data_o_s' is read in the process but is not in the sensitivity list [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/hdl/AES_IP_v1_0_S_AES_AXI.vhd:473]
+INFO: [Synth 8-3491] module 'AES' declared at 'D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/AES.vhd:7' bound to instance 'U0' of component 'AES' [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/hdl/AES_IP_v1_0_S_AES_AXI.vhd:540]
+INFO: [Synth 8-638] synthesizing module 'AES' [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/AES.vhd:17]
+INFO: [Synth 8-3491] module 'KeyExpansion_I_O' declared at 'D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/KeyExpansion_I_O_table.vhd:8' bound to instance 'U0' of component 'KeyExpansion_I_O' [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/AES.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'KeyExpansion_I_O' [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/KeyExpansion_I_O_table.vhd:18]
+INFO: [Synth 8-226] default block is never used [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/KeyExpansion_I_O_table.vhd:48]
+INFO: [Synth 8-226] default block is never used [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/KeyExpansion_I_O_table.vhd:63]
+INFO: [Synth 8-256] done synthesizing module 'KeyExpansion_I_O' (1#1) [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/KeyExpansion_I_O_table.vhd:18]
+INFO: [Synth 8-3491] module 'FSM_AES' declared at 'D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/FSM_AES.vhd:8' bound to instance 'U1' of component 'FSM_AES' [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/AES.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'FSM_AES' [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/FSM_AES.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'FSM_AES' (2#1) [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/FSM_AES.vhd:22]
+INFO: [Synth 8-3491] module 'AESRound' declared at 'D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/AESRound.vhd:6' bound to instance 'U2' of component 'AESRound' [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/AES.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'AESRound' [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/AESRound.vhd:16]
+INFO: [Synth 8-3491] module 'SubBytes' declared at 'D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/SubBytes.vhd:7' bound to instance 'U0' of component 'SubBytes' [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/AESRound.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'SubBytes' [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/SubBytes.vhd:12]
+INFO: [Synth 8-3491] module 'SBOX' declared at 'D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/SBOX_I_O_peralta.vhd:6' bound to instance 'U0' of component 'SBOX' [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/SubBytes.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'SBOX' [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/SBOX_I_O_peralta.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'SBOX' (3#1) [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/SBOX_I_O_peralta.vhd:20]
+INFO: [Synth 8-3491] module 'SBOX' declared at 'D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/SBOX_I_O_peralta.vhd:6' bound to instance 'U0' of component 'SBOX' [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/SubBytes.vhd:20]
+INFO: [Synth 8-3491] module 'SBOX' declared at 'D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/SBOX_I_O_peralta.vhd:6' bound to instance 'U0' of component 'SBOX' [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/SubBytes.vhd:20]
+INFO: [Synth 8-3491] module 'SBOX' declared at 'D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/SBOX_I_O_peralta.vhd:6' bound to instance 'U0' of component 'SBOX' [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/SubBytes.vhd:20]
+INFO: [Synth 8-3491] module 'SBOX' declared at 'D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/SBOX_I_O_peralta.vhd:6' bound to instance 'U0' of component 'SBOX' [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/SubBytes.vhd:20]
+INFO: [Synth 8-3491] module 'SBOX' declared at 'D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/SBOX_I_O_peralta.vhd:6' bound to instance 'U0' of component 'SBOX' [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/SubBytes.vhd:20]
+INFO: [Synth 8-3491] module 'SBOX' declared at 'D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/SBOX_I_O_peralta.vhd:6' bound to instance 'U0' of component 'SBOX' [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/SubBytes.vhd:20]
+INFO: [Synth 8-3491] module 'SBOX' declared at 'D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/SBOX_I_O_peralta.vhd:6' bound to instance 'U0' of component 'SBOX' [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/SubBytes.vhd:20]
+INFO: [Synth 8-3491] module 'SBOX' declared at 'D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/SBOX_I_O_peralta.vhd:6' bound to instance 'U0' of component 'SBOX' [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/SubBytes.vhd:20]
+INFO: [Synth 8-3491] module 'SBOX' declared at 'D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/SBOX_I_O_peralta.vhd:6' bound to instance 'U0' of component 'SBOX' [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/SubBytes.vhd:20]
+INFO: [Synth 8-3491] module 'SBOX' declared at 'D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/SBOX_I_O_peralta.vhd:6' bound to instance 'U0' of component 'SBOX' [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/SubBytes.vhd:20]
+INFO: [Synth 8-3491] module 'SBOX' declared at 'D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/SBOX_I_O_peralta.vhd:6' bound to instance 'U0' of component 'SBOX' [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/SubBytes.vhd:20]
+INFO: [Synth 8-3491] module 'SBOX' declared at 'D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/SBOX_I_O_peralta.vhd:6' bound to instance 'U0' of component 'SBOX' [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/SubBytes.vhd:20]
+INFO: [Synth 8-3491] module 'SBOX' declared at 'D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/SBOX_I_O_peralta.vhd:6' bound to instance 'U0' of component 'SBOX' [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/SubBytes.vhd:20]
+INFO: [Synth 8-3491] module 'SBOX' declared at 'D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/SBOX_I_O_peralta.vhd:6' bound to instance 'U0' of component 'SBOX' [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/SubBytes.vhd:20]
+INFO: [Synth 8-3491] module 'SBOX' declared at 'D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/SBOX_I_O_peralta.vhd:6' bound to instance 'U0' of component 'SBOX' [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/SubBytes.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'SubBytes' (4#1) [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/SubBytes.vhd:12]
+INFO: [Synth 8-3491] module 'ShiftRows' declared at 'D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/ShiftRows.vhd:7' bound to instance 'U1' of component 'ShiftRows' [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/AESRound.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'ShiftRows' [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/ShiftRows.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'ShiftRows' (5#1) [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/ShiftRows.vhd:12]
+INFO: [Synth 8-3491] module 'MixColumns' declared at 'D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/MixColumns.vhd:7' bound to instance 'U2' of component 'MixColumns' [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/AESRound.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'MixColumns' [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/MixColumns.vhd:13]
+INFO: [Synth 8-3491] module 'matrixMultiplier' declared at 'D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/matrixMultiplier.vhd:7' bound to instance 'U0' of component 'matrixMultiplier' [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/MixColumns.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'matrixMultiplier' [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/matrixMultiplier.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'matrixMultiplier' (6#1) [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/matrixMultiplier.vhd:12]
+INFO: [Synth 8-3491] module 'matrixMultiplier' declared at 'D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/matrixMultiplier.vhd:7' bound to instance 'U0' of component 'matrixMultiplier' [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/MixColumns.vhd:21]
+INFO: [Synth 8-3491] module 'matrixMultiplier' declared at 'D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/matrixMultiplier.vhd:7' bound to instance 'U0' of component 'matrixMultiplier' [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/MixColumns.vhd:21]
+INFO: [Synth 8-3491] module 'matrixMultiplier' declared at 'D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/matrixMultiplier.vhd:7' bound to instance 'U0' of component 'matrixMultiplier' [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/MixColumns.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'MixColumns' (7#1) [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/MixColumns.vhd:13]
+INFO: [Synth 8-3491] module 'AddRoundKey' declared at 'D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/AddRoundKey.vhd:7' bound to instance 'U3' of component 'AddRoundKey' [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/AESRound.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'AddRoundKey' [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/AddRoundKey.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'AddRoundKey' (8#1) [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/AddRoundKey.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'AESRound' (9#1) [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/AESRound.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'AES' (10#1) [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.srcs/sources_1/imports/src/AES.vhd:17]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg10_reg was removed.  [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/hdl/AES_IP_v1_0_S_AES_AXI.vhd:251]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg11_reg was removed.  [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/hdl/AES_IP_v1_0_S_AES_AXI.vhd:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg12_reg was removed.  [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/hdl/AES_IP_v1_0_S_AES_AXI.vhd:253]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg13_reg was removed.  [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/hdl/AES_IP_v1_0_S_AES_AXI.vhd:254]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/hdl/AES_IP_v1_0_S_AES_AXI.vhd:256]
+INFO: [Synth 8-256] done synthesizing module 'AES_IP_v1_0_S_AES_AXI' (11#1) [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/hdl/AES_IP_v1_0_S_AES_AXI.vhd:86]
+WARNING: [Synth 8-3848] Net aes_on in module/entity AES_IP_v1_0 does not have driver. [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/hdl/AES_IP_v1_0.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'AES_IP_v1_0' (12#1) [D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/AES_IP_1.0/hdl/AES_IP_v1_0.vhd:49]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[127]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[126]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[125]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[124]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[123]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[122]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[121]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[120]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[119]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[118]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[117]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[116]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[115]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[114]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[113]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[112]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[111]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[110]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[109]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[108]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[107]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[106]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[105]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[104]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[103]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[102]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[101]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[100]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[99]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[98]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[97]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[96]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[95]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[94]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[93]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[92]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[91]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[90]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[89]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[88]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[87]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[86]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[85]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[84]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[83]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[82]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[81]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[80]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[79]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[78]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[77]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[76]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[75]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[74]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[73]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[72]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[71]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[70]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[69]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[68]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[67]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[66]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[65]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[64]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[63]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[62]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[61]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[60]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[59]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[58]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[57]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[56]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[55]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[54]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[53]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[52]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[51]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[50]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[49]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[48]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[47]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[46]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[45]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[44]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[43]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[42]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[41]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[40]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[39]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[38]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[37]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[36]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[35]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[34]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[33]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[32]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[31]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[30]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[29]
+WARNING: [Synth 8-3331] design KeyExpansion_I_O has unconnected port key_i[28]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 412.777 ; gain = 154.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 412.777 ; gain = 154.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 412.777 ; gain = 154.887
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-802] inferred FSM for state register 'present_state_reg' in module 'FSM_AES'
+INFO: [Synth 8-5544] ROM "counter_s" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "counter_s" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   reset |                             0000 |                             0000
+                    hold |                             0001 |                             0001
+                    init |                             0010 |                             0010
+         start_keyexpand |                             0011 |                             0011
+          wait_keyexpand |                             0100 |                             0100
+                  round0 |                             0101 |                             0101
+                  roundn |                             0110 |                             0110
+               lastround |                             0111 |                             0111
+                    done |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'present_state_reg' using encoding 'sequential' in module 'FSM_AES'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 412.777 ; gain = 154.887
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 32    
+	   5 Input      8 Bit         XORs := 8     
+	   3 Input      8 Bit         XORs := 12    
+	   2 Input      1 Bit         XORs := 800   
+	   5 Input      1 Bit         XORs := 48    
+	   4 Input      1 Bit         XORs := 48    
+	   3 Input      1 Bit         XORs := 80    
++---Registers : 
+	              128 Bit    Registers := 1     
+	               32 Bit    Registers := 11    
+	                8 Bit    Registers := 16    
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 10    
+	  15 Input     32 Bit        Muxes := 10    
+	   2 Input      8 Bit        Muxes := 48    
+	   9 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 8     
+	   9 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module KeyExpansion_I_O 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module FSM_AES 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   9 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 5     
+	   9 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 2     
+Module SBOX 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 50    
+	   5 Input      1 Bit         XORs := 3     
+	   4 Input      1 Bit         XORs := 3     
+	   3 Input      1 Bit         XORs := 5     
+Module matrixMultiplier 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 4     
+	   5 Input      8 Bit         XORs := 2     
+	   3 Input      8 Bit         XORs := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+Module MixColumns 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 16    
+Module AddRoundKey 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 16    
+Module AESRound 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 16    
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 16    
+Module AES 
+Detailed RTL Component Info : 
++---Registers : 
+	              128 Bit    Registers := 1     
+Module AES_IP_v1_0_S_AES_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 11    
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 10    
+	  15 Input     32 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES_IP_v1_0_S_AES_AXI_inst/aw_en_reg)
+INFO: [Synth 8-3886] merging instance 'AES_IP_v1_0_S_AES_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'AES_IP_v1_0_S_AES_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES_IP_v1_0_S_AES_AXI_inst/\axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'AES_IP_v1_0_S_AES_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'AES_IP_v1_0_S_AES_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES_IP_v1_0_S_AES_AXI_inst/\axi_bresp_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (aw_en_reg) is unused and will be removed from module AES_IP_v1_0_S_AES_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_bresp_reg[1]) is unused and will be removed from module AES_IP_v1_0_S_AES_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[1]) is unused and will be removed from module AES_IP_v1_0_S_AES_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[0]) is unused and will be removed from module AES_IP_v1_0_S_AES_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_araddr_reg[1]) is unused and will be removed from module AES_IP_v1_0_S_AES_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_araddr_reg[0]) is unused and will be removed from module AES_IP_v1_0_S_AES_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_rresp_reg[1]) is unused and will be removed from module AES_IP_v1_0_S_AES_AXI.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 865.289 ; gain = 607.398
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 865.289 ; gain = 607.398
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 865.289 ; gain = 607.398
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 865.289 ; gain = 607.398
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 865.289 ; gain = 607.398
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 865.289 ; gain = 607.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 865.289 ; gain = 607.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 865.289 ; gain = 607.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 865.289 ; gain = 607.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     2|
+|2     |LUT1  |     2|
+|3     |LUT2  |   184|
+|4     |LUT3  |   112|
+|5     |LUT4  |   273|
+|6     |LUT5  |   227|
+|7     |LUT6  |   805|
+|8     |FDCE  |   133|
+|9     |FDRE  |   492|
+|10    |FDSE  |     5|
+|11    |IBUF  |    51|
+|12    |OBUF  |    41|
+|13    |OBUFT |     1|
++------+------+------+
+
+Report Instance Areas: 
++------+-----------------------------+----------------------+------+
+|      |Instance                     |Module                |Cells |
++------+-----------------------------+----------------------+------+
+|1     |top                          |                      |  2328|
+|2     |  AES_IP_v1_0_S_AES_AXI_inst |AES_IP_v1_0_S_AES_AXI |  2233|
+|3     |    U0                       |AES                   |  1660|
+|4     |      U0                     |KeyExpansion_I_O      |     1|
+|5     |      U1                     |FSM_AES               |   201|
+|6     |      U2                     |AESRound              |  1330|
++------+-----------------------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 865.289 ; gain = 607.398
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 284 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 865.289 ; gain = 607.398
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 865.289 ; gain = 607.398
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 51 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+79 Infos, 114 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:37 . Memory (MB): peak = 865.289 ; gain = 620.676
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/ip_repo/edit_AES_IP_v1_0.runs/synth_1/AES_IP_v1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file AES_IP_v1_0_utilization_synth.rpt -pb AES_IP_v1_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 865.289 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 26 14:07:15 2018...

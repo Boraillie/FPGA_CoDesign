@@ -1,0 +1,115 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Fri Oct 26 14:08:09 2018
+| Host         : Cyril-Laptop running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file AES_IP_v1_0_control_sets_placed.rpt
+| Design       : AES_IP_v1_0
+| Device       : xc7z020
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    48 |
+| Unused register locations in slices containing registers |    12 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|      8 |            3 |
+|     10 |            1 |
+|    16+ |           43 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             256 |           42 |
+| No           | No                    | Yes                    |             266 |           69 |
+| No           | Yes                   | No                     |              10 |            3 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             728 |           93 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------+-------------------------------------------------+-------------------------------------------------------+------------------+----------------+
+|        Clock Signal       |                  Enable Signal                  |                    Set/Reset Signal                   | Slice Load Count | Bel Load Count |
++---------------------------+-------------------------------------------------+-------------------------------------------------------+------------------+----------------+
+|  s_aes_axi_aclk_IBUF_BUFG |                                                 | AES_IP_v1_0_S_AES_AXI_inst/U0/U1/CurrentState_reg     |                1 |              2 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/U0/U1/counter_s0     | AES_IP_v1_0_S_AES_AXI_inst/U0/U1/counter_s[3]_i_1_n_1 |                1 |              8 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/axi_awready0         | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                1 |              8 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/axi_arready0         | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                1 |              8 |
+|  s_aes_axi_aclk_IBUF_BUFG |                                                 | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                3 |             10 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/p_1_in[31]           | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                1 |             16 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/slv_reg2[31]_i_1_n_1 | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                1 |             16 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/slv_reg1[15]_i_1_n_1 | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                2 |             16 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/slv_reg1[23]_i_1_n_1 | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                2 |             16 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/slv_reg1[7]_i_1_n_1  | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                2 |             16 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/slv_reg2[15]_i_1_n_1 | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                2 |             16 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/slv_reg2[23]_i_1_n_1 | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                1 |             16 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/p_1_in[15]           | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                1 |             16 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/slv_reg2[7]_i_1_n_1  | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                1 |             16 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/slv_reg3[15]_i_1_n_1 | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                2 |             16 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/slv_reg1[31]_i_1_n_1 | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                2 |             16 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/slv_reg3[23]_i_1_n_1 | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                2 |             16 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/slv_reg3[31]_i_1_n_1 | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                2 |             16 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/slv_reg3[7]_i_1_n_1  | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                2 |             16 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/slv_reg4[15]_i_1_n_1 | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                2 |             16 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/p_1_in[23]           | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                1 |             16 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/slv_reg6[15]_i_1_n_1 | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                2 |             16 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/slv_reg7[31]_i_1_n_1 | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                3 |             16 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/slv_reg4[7]_i_1_n_1  | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                1 |             16 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/slv_reg7[23]_i_1_n_1 | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                2 |             16 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/slv_reg4[23]_i_1_n_1 | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                1 |             16 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/slv_reg9[7]_i_1_n_1  | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                2 |             16 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/slv_reg8[23]_i_1_n_1 | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                2 |             16 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/slv_reg5[31]_i_1_n_1 | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                3 |             16 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/slv_reg4[31]_i_1_n_1 | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                2 |             16 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/slv_reg8[7]_i_1_n_1  | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                3 |             16 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/slv_reg6[7]_i_1_n_1  | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                2 |             16 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/slv_reg5[7]_i_1_n_1  | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                2 |             16 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/slv_reg7[7]_i_1_n_1  | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                2 |             16 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/slv_reg5[15]_i_1_n_1 | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                1 |             16 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/slv_reg8[15]_i_1_n_1 | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                2 |             16 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/slv_reg9[15]_i_1_n_1 | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                3 |             16 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/slv_reg9[23]_i_1_n_1 | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                2 |             16 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/slv_reg5[23]_i_1_n_1 | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                2 |             16 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/slv_reg8[31]_i_1_n_1 | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                1 |             16 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/slv_reg9[31]_i_1_n_1 | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                4 |             16 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/slv_reg7[15]_i_1_n_1 | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                3 |             16 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/slv_reg6[23]_i_1_n_1 | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                2 |             16 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/slv_reg6[31]_i_1_n_1 | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                2 |             16 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/p_1_in[7]            | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |                1 |             16 |
+|  s_aes_axi_aclk_IBUF_BUFG | AES_IP_v1_0_S_AES_AXI_inst/slv_reg_rden         | AES_IP_v1_0_S_AES_AXI_inst/axi_wready_i_1_n_1         |               14 |             64 |
+|  n_0_1233_BUFG            |                                                 |                                                       |               42 |            256 |
+|  s_aes_axi_aclk_IBUF_BUFG |                                                 | AES_IP_v1_0_S_AES_AXI_inst/slv_reg8[0]                |               68 |            264 |
++---------------------------+-------------------------------------------------+-------------------------------------------------------+------------------+----------------+
+
+

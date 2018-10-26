@@ -809,3 +809,19 @@ selectCodeEditor("AES_IP_v1_0_S_AES_AXI.vhd", 148, 251); // ce (w, ck)
 // TclEventType: DG_GRAPH_GENERATED
 // Elapsed time: 35 seconds
 selectCodeEditor("AES_IP_v1_0_S_AES_AXI.vhd", 102, 168); // ce (w, ck)
+// Elapsed time: 1665 seconds
+closeMainWindow("AES_IP_v1_0_project - [d:/documents/cours/emse/3a/embedded_systems/fpga_codesign/projet_aes_2018/managed_ip_project/managed_ip_project.tmp/aes_ip_v1_0_project/AES_IP_v1_0_project.xpr] - Vivado 2018.2"); // ck
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// A (ck): Close Project: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 714 MB. GUI used memory: 61 MB. Current time: 10/15/18 5:01:41 PM CEST
+// Elapsed time: 83 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Close Project : addNotify
+dismissDialog("Close Project"); // A (ck)
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 714 MB. GUI used memory: 56 MB. Current time: 10/15/18 5:02:38 PM CEST
+// 'b' command handler elapsed time: 87 seconds
+// Tcl Message: close_project 
+dismissDialog("Close Project"); // bx (ck)
+closeMainWindow("Manage IP - [D:\Documents\Cours\EMSE\3A\Embedded_Systems\FPGA_CoDesign\Projet_AES_2018] - Vivado 2018.2"); // ck
+// HOptionPane Warning: 'A background task is running. Please wait until it completes to exit Vivado. If you choose to abort background task and exit immediately, you will lose all unsaved changes to project. (Background Task)'

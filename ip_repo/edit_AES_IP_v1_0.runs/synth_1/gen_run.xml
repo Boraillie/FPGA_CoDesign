@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1540555577">
+  <File Type="PA-TCL" Name="AES_IP_v1_0.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="AES_IP_v1_0_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="AES_IP_v1_0_reports.tcl"/>
+  <File Type="RDS-RDS" Name="AES_IP_v1_0.vds"/>
+  <File Type="RDS-UTIL" Name="AES_IP_v1_0_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="AES_IP_v1_0_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="AES_IP_v1_0.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="AES_IP_v1_0_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="AES_IP_v1_0_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/src/CryptPack.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/AES_IP_1.0/src/CryptPack.vhd"/>
+        <Attr Name="ImportTime" Val="1505379258"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/AES.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/AES_IP_1.0/src/AES.vhd"/>
+        <Attr Name="ImportTime" Val="1523460900"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/AESRound.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/AES_IP_1.0/src/AESRound.vhd"/>
+        <Attr Name="ImportTime" Val="1523450644"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/AES_IP_1.0/hdl/AES_IP_v1_0_S_AES_AXI.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/AddRoundKey.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/AES_IP_1.0/src/AddRoundKey.vhd"/>
+        <Attr Name="ImportTime" Val="1523450644"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/FSM_AES.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/AES_IP_1.0/src/FSM_AES.vhd"/>
+        <Attr Name="ImportTime" Val="1523456360"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/KeyExpansion_I_O_table.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/AES_IP_1.0/src/KeyExpansion_I_O_table.vhd"/>
+        <Attr Name="ImportTime" Val="1523450644"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/MixColumns.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/AES_IP_1.0/src/MixColumns.vhd"/>
+        <Attr Name="ImportTime" Val="1523450644"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/SBOX_I_O_peralta.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/AES_IP_1.0/src/SBOX_I_O_peralta.vhd"/>
+        <Attr Name="ImportTime" Val="1523450644"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/ShiftRows.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/AES_IP_1.0/src/ShiftRows.vhd"/>
+        <Attr Name="ImportTime" Val="1523450644"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/SubBytes.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/AES_IP_1.0/src/SubBytes.vhd"/>
+        <Attr Name="ImportTime" Val="1523460886"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/matrixMultiplier.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/AES_IP_1.0/src/matrixMultiplier.vhd"/>
+        <Attr Name="ImportTime" Val="1523450644"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/AES_IP_1.0/hdl/AES_IP_v1_0.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/AES_IP_1.0/component.xml">
+      <FileInfo SFType="IPXACT"/>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/KeyExpansion_FSM.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/AES_IP_1.0/src/KeyExpansion_FSM.vhd"/>
+        <Attr Name="ImportTime" Val="1523455098"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/Counter.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/AES_IP_1.0/src/Counter.vhd"/>
+        <Attr Name="ImportTime" Val="1523450644"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/KeyExpansion_I_O.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/AES_IP_1.0/src/KeyExpansion_I_O.vhd"/>
+        <Attr Name="ImportTime" Val="1523454978"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/KeyExpansion.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/AES_IP_1.0/src/KeyExpansion.vhd"/>
+        <Attr Name="ImportTime" Val="1523460876"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="AES_IP_v1_0"/>
+      <Option Name="TopRTLFile" Val="$PPRDIR/AES_IP_1.0/hdl/AES_IP_v1_0.vhd"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

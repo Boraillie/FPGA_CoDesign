@@ -56,6 +56,7 @@ architecture arch_imp of AES_IP_v1_0 is
 		);
 		port (
 		
+		aes_on : out std_logic;
 		
 		S_AXI_ACLK	: in std_logic;
 		S_AXI_ARESETN	: in std_logic;

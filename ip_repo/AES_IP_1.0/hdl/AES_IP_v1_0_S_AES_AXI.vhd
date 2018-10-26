@@ -496,17 +496,17 @@ begin
 	        reg_data_out <= slv_reg8;
 	      when b"1001" =>
 	        reg_data_out <= slv_reg9;
-	      when b"1010" =>
-	        reg_data_out <= slv_reg10;
+				when b"1010" =>
+	        reg_data_out <= data_o_s (31 downto 0);
 	      when b"1011" =>
-	        reg_data_out <= slv_reg11;
+	        reg_data_out <= data_o_s (63 downto 32);
 	      when b"1100" =>
-	        reg_data_out <= slv_reg12;
+	        reg_data_out <= data_o_s (95 downto 64);
 	      when b"1101" =>
-	        reg_data_out <= slv_reg13;
+	        reg_data_out <= data_o_s (127 downto 96);
 	      when others =>
 	        reg_data_out  <= (others => '0');
-	    end case;
+			end case;
 	end process; 
 
 	-- Output register or memory read data
@@ -535,10 +535,7 @@ begin
     reset_s <= slv_reg8(0);
     start_s <= slv_reg9(0);
     
-    slv_reg10 <= data_o_s (31 downto 0);
-    slv_reg11 <= data_o_s (63 downto 32);
-    slv_reg12 <= data_o_s (95 downto 64);
-    slv_reg13 <= data_o_s (127 downto 96);
+    
     
      U0 : AES
        port map( key_i => key_s,
@@ -551,3 +548,11 @@ begin
 	-- User logic ends
 
 end arch_imp;
+
+configuration AES_IP_v1_0_S_AES_AXI_conf of AES_IP_v1_0_S_AES_AXI is
+	for arch_imp
+		for U0 : AES
+				use entity work.AES(AES_arch);
+		end for;
+	end for;
+end AES_IP_v1_0_S_AES_AXI_conf;
