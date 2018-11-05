@@ -8,3 +8,7 @@ start
 
 quand AES ON
 read 128bits de la sortie
+
+
+key :   2b7e1516 28aed2a6 abf71588 09cf4f3c
+text :  52657374 6f20656e 2076696c 6c65203f

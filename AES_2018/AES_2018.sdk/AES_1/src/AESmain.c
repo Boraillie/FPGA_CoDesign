@@ -35,9 +35,10 @@ void AES_process()
     AES_IP_mWriteReg(XPAR_AES_IP_0_S_AES_AXI_BASEADDR, AES_IP_S_AES_AXI_SLV_REG8_OFFSET, 0x0);
 
     //Send Key
-    int key1, key2, key3, key4;
-    print("Type key (space every 8 hex char):\n\r");
-    scanf("%d %d %d %d", &key1, &key2, &key3, &key4);
+    unsigned int key1, key2, key3, key4;
+    print("Type key :\n\r");
+    scanf("%x %x %x %x", &key1, &key2, &key3, &key4);
+    printf("%x %x %x %x\n", key1, key2, key3, key4);
 
     AES_IP_mWriteReg(XPAR_AES_IP_0_S_AES_AXI_BASEADDR, AES_IP_S_AES_AXI_SLV_REG4_OFFSET, key1);
     AES_IP_mWriteReg(XPAR_AES_IP_0_S_AES_AXI_BASEADDR, AES_IP_S_AES_AXI_SLV_REG5_OFFSET, key2);
@@ -46,9 +47,10 @@ void AES_process()
     print("\nKey sent\n\r");
 
     //Send plain text
-    int text1, text2, text3, text4;
-    print("Type plain text to encrypt (space every 8 hex char):\n\r");
-    scanf("%d %d %d %d", &text1, &text2, &text3, &text4);
+    unsigned int text1, text2, text3, text4;
+    print("Type plain text to encrypt :\n\r");
+    scanf("%x %x %x %x", &text1, &text2, &text3, &text4);
+    printf("%x %x %x %x\n", text1, text2, text3, text4);
 
     AES_IP_mWriteReg(XPAR_AES_IP_0_S_AES_AXI_BASEADDR, AES_IP_S_AES_AXI_SLV_REG0_OFFSET, text1);
     AES_IP_mWriteReg(XPAR_AES_IP_0_S_AES_AXI_BASEADDR, AES_IP_S_AES_AXI_SLV_REG1_OFFSET, text2);
@@ -62,18 +64,31 @@ void AES_process()
 
     //Wait for end of AES
     print("Wait for end of AES\n\r");
-    //AES_on pas connecte à un registre donc impossible a lire
-    for (int i=0; i<1000; i++); //wait
+    //AES_on pas connecte ï¿½ un registre donc impossible a lire
+    for (int i=0; i<10000; i++); //wait
 
     //Print result
     print("\n\nThe encrypted result is :\n\r");
-    int res1, res2, res3, res4;
+    unsigned int res1, res2, res3, res4;
 
     res1 = AES_IP_mReadReg(XPAR_AES_IP_0_S_AES_AXI_BASEADDR, AES_IP_S_AES_AXI_SLV_REG13_OFFSET);
     res2 = AES_IP_mReadReg(XPAR_AES_IP_0_S_AES_AXI_BASEADDR, AES_IP_S_AES_AXI_SLV_REG12_OFFSET);
     res3 = AES_IP_mReadReg(XPAR_AES_IP_0_S_AES_AXI_BASEADDR, AES_IP_S_AES_AXI_SLV_REG11_OFFSET);
     res4 = AES_IP_mReadReg(XPAR_AES_IP_0_S_AES_AXI_BASEADDR, AES_IP_S_AES_AXI_SLV_REG10_OFFSET);
-    printf("%d %d %d %d\n\r", res1, res2, res3, res4);
+    printf("%x %x %x %x\n\r", res1, res2, res3, res4);
+
+    //Print registres
+    print("\n\nThe registers :\n\r");
+	unsigned int textR1, textR2, textR3, textR4;
+
+	textR1 = AES_IP_mReadReg(XPAR_AES_IP_0_S_AES_AXI_BASEADDR, AES_IP_S_AES_AXI_SLV_REG0_OFFSET);
+	textR2 = AES_IP_mReadReg(XPAR_AES_IP_0_S_AES_AXI_BASEADDR, AES_IP_S_AES_AXI_SLV_REG1_OFFSET);
+	textR3 = AES_IP_mReadReg(XPAR_AES_IP_0_S_AES_AXI_BASEADDR, AES_IP_S_AES_AXI_SLV_REG2_OFFSET);
+	textR4 = AES_IP_mReadReg(XPAR_AES_IP_0_S_AES_AXI_BASEADDR, AES_IP_S_AES_AXI_SLV_REG3_OFFSET);
+	printf("%x %x %x %x\n\r", textR1, textR2, textR3, textR4);
+
+	unsigned int startR = AES_IP_mReadReg(XPAR_AES_IP_0_S_AES_AXI_BASEADDR, AES_IP_S_AES_AXI_SLV_REG9_OFFSET);
+	printf("Start ? %x", startR);
 
 }
 
