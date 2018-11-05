@@ -98,7 +98,8 @@ architecture arch_imp of AES_IP_v1_0_S_AES_AXI is
     signal data_o_s : STD_LOGIC_VECTOR(127 downto 0);
     signal key_s : STD_LOGIC_VECTOR(127 downto 0);
     signal reset_s : std_logic;
-    signal start_s : std_logic;
+		signal start_s : std_logic;
+		signal aes_on_s : STD_LOGIC_VECTOR(31 downto 0);
     
 	-- AXI4LITE signals
 	signal axi_awaddr	: std_logic_vector(C_S_AXI_ADDR_WIDTH-1 downto 0);
@@ -495,7 +496,7 @@ begin
 	      when b"1000" =>
 	        reg_data_out <= slv_reg8;
 	      when b"1001" =>
-	        reg_data_out <= slv_reg9;
+	        reg_data_out <= aes_on_s;
 				when b"1010" =>
 	        reg_data_out <= data_o_s (31 downto 0);
 	      when b"1011" =>
@@ -544,9 +545,10 @@ begin
           start_i => start_s,
           data_i => data_i_s,
           data_o => data_o_s,
-          aes_on_o => aes_on);
+          aes_on_o => aes_on_s(0));
 	-- User logic ends
 
+		aes_on <= aes_on_s(0);
 end arch_imp;
 
 configuration AES_IP_v1_0_S_AES_AXI_conf of AES_IP_v1_0_S_AES_AXI is

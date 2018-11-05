@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
 // Date        : Mon Oct 15 15:33:18 2018
 // Host        : Cyril-Laptop running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               d:/Documents/Cours/EMSE/3A/Embedded_Systems/FPGA_CoDesign/Projet_AES_2018/AES_2018/AES_2018.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top system_auto_pc_0 -prefix
+//               system_auto_pc_0_ system_auto_pc_0_stub.v
 // Design      : system_auto_pc_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg484-1

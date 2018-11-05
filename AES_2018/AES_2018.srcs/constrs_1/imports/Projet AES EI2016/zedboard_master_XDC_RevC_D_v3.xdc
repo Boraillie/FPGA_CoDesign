@@ -72,7 +72,7 @@
 # ----------------------------------------------------------------------------
 # User LEDs - Bank 33
 # ---------------------------------------------------------------------------- 
-set_property PACKAGE_PIN T22 [get_ports {{aes_on_0}];   # "LD0"
+set_property PACKAGE_PIN T22 [get_ports {aes_on_0}];   # "LD0"
 #set_property PACKAGE_PIN T21 [get_ports {data_o[1]}];  # "LD1"
 #set_property PACKAGE_PIN U22 [get_ports {data_o[2]}];  # "LD2"
 #set_property PACKAGE_PIN U22 [get_ports {data_o[2]}];  # "LD2"

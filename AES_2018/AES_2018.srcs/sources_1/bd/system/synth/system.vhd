@@ -1,7 +1,7 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
---Date        : Mon Oct 15 15:31:45 2018
+--Date        : Mon Nov  5 11:44:43 2018
 --Host        : Cyril-Laptop running 64-bit major release  (build 9200)
 --Command     : generate_target system.bd
 --Design      : system
@@ -127,9 +127,11 @@ entity m01_couplers_imp_4Y7TYO is
     M_ACLK : in STD_LOGIC;
     M_ARESETN : in STD_LOGIC;
     M_AXI_araddr : out STD_LOGIC;
+    M_AXI_arprot : out STD_LOGIC;
     M_AXI_arready : in STD_LOGIC;
     M_AXI_arvalid : out STD_LOGIC;
     M_AXI_awaddr : out STD_LOGIC;
+    M_AXI_awprot : out STD_LOGIC;
     M_AXI_awready : in STD_LOGIC;
     M_AXI_awvalid : out STD_LOGIC;
     M_AXI_bready : out STD_LOGIC;
@@ -146,9 +148,11 @@ entity m01_couplers_imp_4Y7TYO is
     S_ACLK : in STD_LOGIC;
     S_ARESETN : in STD_LOGIC;
     S_AXI_araddr : in STD_LOGIC;
+    S_AXI_arprot : in STD_LOGIC;
     S_AXI_arready : out STD_LOGIC;
     S_AXI_arvalid : in STD_LOGIC;
     S_AXI_awaddr : in STD_LOGIC;
+    S_AXI_awprot : in STD_LOGIC;
     S_AXI_awready : out STD_LOGIC;
     S_AXI_awvalid : in STD_LOGIC;
     S_AXI_bready : in STD_LOGIC;
@@ -167,9 +171,11 @@ end m01_couplers_imp_4Y7TYO;
 
 architecture STRUCTURE of m01_couplers_imp_4Y7TYO is
   signal m01_couplers_to_m01_couplers_ARADDR : STD_LOGIC;
+  signal m01_couplers_to_m01_couplers_ARPROT : STD_LOGIC;
   signal m01_couplers_to_m01_couplers_ARREADY : STD_LOGIC;
   signal m01_couplers_to_m01_couplers_ARVALID : STD_LOGIC;
   signal m01_couplers_to_m01_couplers_AWADDR : STD_LOGIC;
+  signal m01_couplers_to_m01_couplers_AWPROT : STD_LOGIC;
   signal m01_couplers_to_m01_couplers_AWREADY : STD_LOGIC;
   signal m01_couplers_to_m01_couplers_AWVALID : STD_LOGIC;
   signal m01_couplers_to_m01_couplers_BREADY : STD_LOGIC;
@@ -185,8 +191,10 @@ architecture STRUCTURE of m01_couplers_imp_4Y7TYO is
   signal m01_couplers_to_m01_couplers_WVALID : STD_LOGIC;
 begin
   M_AXI_araddr <= m01_couplers_to_m01_couplers_ARADDR;
+  M_AXI_arprot <= m01_couplers_to_m01_couplers_ARPROT;
   M_AXI_arvalid <= m01_couplers_to_m01_couplers_ARVALID;
   M_AXI_awaddr <= m01_couplers_to_m01_couplers_AWADDR;
+  M_AXI_awprot <= m01_couplers_to_m01_couplers_AWPROT;
   M_AXI_awvalid <= m01_couplers_to_m01_couplers_AWVALID;
   M_AXI_bready <= m01_couplers_to_m01_couplers_BREADY;
   M_AXI_rready <= m01_couplers_to_m01_couplers_RREADY;
@@ -202,9 +210,11 @@ begin
   S_AXI_rvalid <= m01_couplers_to_m01_couplers_RVALID;
   S_AXI_wready <= m01_couplers_to_m01_couplers_WREADY;
   m01_couplers_to_m01_couplers_ARADDR <= S_AXI_araddr;
+  m01_couplers_to_m01_couplers_ARPROT <= S_AXI_arprot;
   m01_couplers_to_m01_couplers_ARREADY <= M_AXI_arready;
   m01_couplers_to_m01_couplers_ARVALID <= S_AXI_arvalid;
   m01_couplers_to_m01_couplers_AWADDR <= S_AXI_awaddr;
+  m01_couplers_to_m01_couplers_AWPROT <= S_AXI_awprot;
   m01_couplers_to_m01_couplers_AWREADY <= M_AXI_awready;
   m01_couplers_to_m01_couplers_AWVALID <= S_AXI_awvalid;
   m01_couplers_to_m01_couplers_BREADY <= S_AXI_bready;
@@ -567,9 +577,11 @@ entity system_ps7_0_axi_periph_0 is
     M01_ACLK : in STD_LOGIC;
     M01_ARESETN : in STD_LOGIC;
     M01_AXI_araddr : out STD_LOGIC;
+    M01_AXI_arprot : out STD_LOGIC;
     M01_AXI_arready : in STD_LOGIC;
     M01_AXI_arvalid : out STD_LOGIC;
     M01_AXI_awaddr : out STD_LOGIC;
+    M01_AXI_awprot : out STD_LOGIC;
     M01_AXI_awready : in STD_LOGIC;
     M01_AXI_awvalid : out STD_LOGIC;
     M01_AXI_bready : out STD_LOGIC;
@@ -697,9 +709,11 @@ architecture STRUCTURE of system_ps7_0_axi_periph_0 is
   signal m00_couplers_to_ps7_0_axi_periph_WSTRB : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal m00_couplers_to_ps7_0_axi_periph_WVALID : STD_LOGIC;
   signal m01_couplers_to_ps7_0_axi_periph_ARADDR : STD_LOGIC;
+  signal m01_couplers_to_ps7_0_axi_periph_ARPROT : STD_LOGIC;
   signal m01_couplers_to_ps7_0_axi_periph_ARREADY : STD_LOGIC;
   signal m01_couplers_to_ps7_0_axi_periph_ARVALID : STD_LOGIC;
   signal m01_couplers_to_ps7_0_axi_periph_AWADDR : STD_LOGIC;
+  signal m01_couplers_to_ps7_0_axi_periph_AWPROT : STD_LOGIC;
   signal m01_couplers_to_ps7_0_axi_periph_AWREADY : STD_LOGIC;
   signal m01_couplers_to_ps7_0_axi_periph_AWVALID : STD_LOGIC;
   signal m01_couplers_to_ps7_0_axi_periph_BREADY : STD_LOGIC;
@@ -792,9 +806,11 @@ architecture STRUCTURE of system_ps7_0_axi_periph_0 is
   signal xbar_to_m00_couplers_WSTRB : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal xbar_to_m00_couplers_WVALID : STD_LOGIC_VECTOR ( 0 to 0 );
   signal xbar_to_m01_couplers_ARADDR : STD_LOGIC_VECTOR ( 63 downto 32 );
+  signal xbar_to_m01_couplers_ARPROT : STD_LOGIC_VECTOR ( 5 downto 3 );
   signal xbar_to_m01_couplers_ARREADY : STD_LOGIC;
   signal xbar_to_m01_couplers_ARVALID : STD_LOGIC_VECTOR ( 1 to 1 );
   signal xbar_to_m01_couplers_AWADDR : STD_LOGIC_VECTOR ( 63 downto 32 );
+  signal xbar_to_m01_couplers_AWPROT : STD_LOGIC_VECTOR ( 5 downto 3 );
   signal xbar_to_m01_couplers_AWREADY : STD_LOGIC;
   signal xbar_to_m01_couplers_AWVALID : STD_LOGIC_VECTOR ( 1 to 1 );
   signal xbar_to_m01_couplers_BREADY : STD_LOGIC_VECTOR ( 1 to 1 );
@@ -808,8 +824,6 @@ architecture STRUCTURE of system_ps7_0_axi_periph_0 is
   signal xbar_to_m01_couplers_WREADY : STD_LOGIC;
   signal xbar_to_m01_couplers_WSTRB : STD_LOGIC_VECTOR ( 7 downto 4 );
   signal xbar_to_m01_couplers_WVALID : STD_LOGIC_VECTOR ( 1 to 1 );
-  signal NLW_xbar_m_axi_arprot_UNCONNECTED : STD_LOGIC_VECTOR ( 5 downto 3 );
-  signal NLW_xbar_m_axi_awprot_UNCONNECTED : STD_LOGIC_VECTOR ( 5 downto 3 );
 begin
   M00_ACLK_1 <= M00_ACLK;
   M00_ARESETN_1 <= M00_ARESETN;
@@ -827,8 +841,10 @@ begin
   M01_ACLK_1 <= M01_ACLK;
   M01_ARESETN_1 <= M01_ARESETN;
   M01_AXI_araddr <= m01_couplers_to_ps7_0_axi_periph_ARADDR;
+  M01_AXI_arprot <= m01_couplers_to_ps7_0_axi_periph_ARPROT;
   M01_AXI_arvalid <= m01_couplers_to_ps7_0_axi_periph_ARVALID;
   M01_AXI_awaddr <= m01_couplers_to_ps7_0_axi_periph_AWADDR;
+  M01_AXI_awprot <= m01_couplers_to_ps7_0_axi_periph_AWPROT;
   M01_AXI_awvalid <= m01_couplers_to_ps7_0_axi_periph_AWVALID;
   M01_AXI_bready <= m01_couplers_to_ps7_0_axi_periph_BREADY;
   M01_AXI_rready <= m01_couplers_to_ps7_0_axi_periph_RREADY;
@@ -943,9 +959,11 @@ m01_couplers: entity work.m01_couplers_imp_4Y7TYO
       M_ACLK => M01_ACLK_1,
       M_ARESETN => M01_ARESETN_1,
       M_AXI_araddr => m01_couplers_to_ps7_0_axi_periph_ARADDR,
+      M_AXI_arprot => m01_couplers_to_ps7_0_axi_periph_ARPROT,
       M_AXI_arready => m01_couplers_to_ps7_0_axi_periph_ARREADY,
       M_AXI_arvalid => m01_couplers_to_ps7_0_axi_periph_ARVALID,
       M_AXI_awaddr => m01_couplers_to_ps7_0_axi_periph_AWADDR,
+      M_AXI_awprot => m01_couplers_to_ps7_0_axi_periph_AWPROT,
       M_AXI_awready => m01_couplers_to_ps7_0_axi_periph_AWREADY,
       M_AXI_awvalid => m01_couplers_to_ps7_0_axi_periph_AWVALID,
       M_AXI_bready => m01_couplers_to_ps7_0_axi_periph_BREADY,
@@ -962,9 +980,11 @@ m01_couplers: entity work.m01_couplers_imp_4Y7TYO
       S_ACLK => ps7_0_axi_periph_ACLK_net,
       S_ARESETN => ps7_0_axi_periph_ARESETN_net,
       S_AXI_araddr => xbar_to_m01_couplers_ARADDR(32),
+      S_AXI_arprot => xbar_to_m01_couplers_ARPROT(3),
       S_AXI_arready => xbar_to_m01_couplers_ARREADY,
       S_AXI_arvalid => xbar_to_m01_couplers_ARVALID(1),
       S_AXI_awaddr => xbar_to_m01_couplers_AWADDR(32),
+      S_AXI_awprot => xbar_to_m01_couplers_AWPROT(3),
       S_AXI_awready => xbar_to_m01_couplers_AWREADY,
       S_AXI_awvalid => xbar_to_m01_couplers_AWVALID(1),
       S_AXI_bready => xbar_to_m01_couplers_BREADY(1),
@@ -1049,7 +1069,7 @@ xbar: component system_xbar_0
       aresetn => ps7_0_axi_periph_ARESETN_net,
       m_axi_araddr(63 downto 32) => xbar_to_m01_couplers_ARADDR(63 downto 32),
       m_axi_araddr(31 downto 0) => xbar_to_m00_couplers_ARADDR(31 downto 0),
-      m_axi_arprot(5 downto 3) => NLW_xbar_m_axi_arprot_UNCONNECTED(5 downto 3),
+      m_axi_arprot(5 downto 3) => xbar_to_m01_couplers_ARPROT(5 downto 3),
       m_axi_arprot(2 downto 0) => xbar_to_m00_couplers_ARPROT(2 downto 0),
       m_axi_arready(1) => xbar_to_m01_couplers_ARREADY,
       m_axi_arready(0) => xbar_to_m00_couplers_ARREADY,
@@ -1057,7 +1077,7 @@ xbar: component system_xbar_0
       m_axi_arvalid(0) => xbar_to_m00_couplers_ARVALID(0),
       m_axi_awaddr(63 downto 32) => xbar_to_m01_couplers_AWADDR(63 downto 32),
       m_axi_awaddr(31 downto 0) => xbar_to_m00_couplers_AWADDR(31 downto 0),
-      m_axi_awprot(5 downto 3) => NLW_xbar_m_axi_awprot_UNCONNECTED(5 downto 3),
+      m_axi_awprot(5 downto 3) => xbar_to_m01_couplers_AWPROT(5 downto 3),
       m_axi_awprot(2 downto 0) => xbar_to_m00_couplers_AWPROT(2 downto 0),
       m_axi_awready(1) => xbar_to_m01_couplers_AWREADY,
       m_axi_awready(0) => xbar_to_m00_couplers_AWREADY,
@@ -1365,8 +1385,10 @@ architecture STRUCTURE of system is
   signal rst_ps7_0_100M_interconnect_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
   signal rst_ps7_0_100M_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_ps7_0_axi_periph_M01_AXI_araddr_UNCONNECTED : STD_LOGIC;
+  signal NLW_ps7_0_axi_periph_M01_AXI_arprot_UNCONNECTED : STD_LOGIC;
   signal NLW_ps7_0_axi_periph_M01_AXI_arvalid_UNCONNECTED : STD_LOGIC;
   signal NLW_ps7_0_axi_periph_M01_AXI_awaddr_UNCONNECTED : STD_LOGIC;
+  signal NLW_ps7_0_axi_periph_M01_AXI_awprot_UNCONNECTED : STD_LOGIC;
   signal NLW_ps7_0_axi_periph_M01_AXI_awvalid_UNCONNECTED : STD_LOGIC;
   signal NLW_ps7_0_axi_periph_M01_AXI_bready_UNCONNECTED : STD_LOGIC;
   signal NLW_ps7_0_axi_periph_M01_AXI_rready_UNCONNECTED : STD_LOGIC;
@@ -1521,9 +1543,11 @@ ps7_0_axi_periph: entity work.system_ps7_0_axi_periph_0
       M01_ACLK => processing_system7_0_FCLK_CLK0,
       M01_ARESETN => rst_ps7_0_100M_peripheral_aresetn(0),
       M01_AXI_araddr => NLW_ps7_0_axi_periph_M01_AXI_araddr_UNCONNECTED,
+      M01_AXI_arprot => NLW_ps7_0_axi_periph_M01_AXI_arprot_UNCONNECTED,
       M01_AXI_arready => '0',
       M01_AXI_arvalid => NLW_ps7_0_axi_periph_M01_AXI_arvalid_UNCONNECTED,
       M01_AXI_awaddr => NLW_ps7_0_axi_periph_M01_AXI_awaddr_UNCONNECTED,
+      M01_AXI_awprot => NLW_ps7_0_axi_periph_M01_AXI_awprot_UNCONNECTED,
       M01_AXI_awready => '0',
       M01_AXI_awvalid => NLW_ps7_0_axi_periph_M01_AXI_awvalid_UNCONNECTED,
       M01_AXI_bready => NLW_ps7_0_axi_periph_M01_AXI_bready_UNCONNECTED,

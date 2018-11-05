@@ -87,8 +87,17 @@ void AES_process()
 	textR4 = AES_IP_mReadReg(XPAR_AES_IP_0_S_AES_AXI_BASEADDR, AES_IP_S_AES_AXI_SLV_REG3_OFFSET);
 	printf("%x %x %x %x\n\r", textR1, textR2, textR3, textR4);
 
+	unsigned int keyR1, keyR2, keyR3, keyR4;
+
+	keyR1 = AES_IP_mReadReg(XPAR_AES_IP_0_S_AES_AXI_BASEADDR, AES_IP_S_AES_AXI_SLV_REG4_OFFSET);
+	keyR2 = AES_IP_mReadReg(XPAR_AES_IP_0_S_AES_AXI_BASEADDR, AES_IP_S_AES_AXI_SLV_REG5_OFFSET);
+	keyR3 = AES_IP_mReadReg(XPAR_AES_IP_0_S_AES_AXI_BASEADDR, AES_IP_S_AES_AXI_SLV_REG6_OFFSET);
+	keyR4 = AES_IP_mReadReg(XPAR_AES_IP_0_S_AES_AXI_BASEADDR, AES_IP_S_AES_AXI_SLV_REG7_OFFSET);
+	printf("%x %x %x %x\n\r", keyR1, keyR2, keyR3, keyR4);
+
+
 	unsigned int startR = AES_IP_mReadReg(XPAR_AES_IP_0_S_AES_AXI_BASEADDR, AES_IP_S_AES_AXI_SLV_REG9_OFFSET);
-	printf("Start ? %x", startR);
+	printf("AES_on ? %x", startR);
 
 }
 
